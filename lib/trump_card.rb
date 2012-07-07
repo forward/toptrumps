@@ -39,7 +39,7 @@ class TrumpCard
   end
 
   def total_score
-    @total_score ||= scores.reduce(&:+)
+    @total_score ||= scores.reduce(&:+) || 0
   end
 
   def valid?

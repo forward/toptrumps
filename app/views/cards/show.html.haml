@@ -1,0 +1,10 @@
+.page-title
+  %h1
+    Your Card
+
+%iframe{:src => iframe_card_url(@card)}
+
+
+%h2= link_to 'Edit your card', @card.url + '/edit'
+or
+%h2= link_to 'Update from thimble', scrape_card_path(@card)

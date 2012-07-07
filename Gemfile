@@ -14,7 +14,7 @@ gem "haml-rails"
 gem "twitter-bootstrap-rails"
 gem "inherited_resources"
 gem "nokogiri"
-
+gem 'rest-client'
 gem 'thin'
 
 # Gems used only for assets and not required
