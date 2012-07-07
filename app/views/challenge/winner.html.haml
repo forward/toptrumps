@@ -1,0 +1,24 @@
+.row
+  .span6
+    %h1
+      = @winner.name
+      won with
+      = @skill
+    %iframe{:src => iframe_card_url(@winner), :width => 400, :height =>432}
+  .span6
+    %h1
+      = @winner.trump_card.score(@skill)
+      = @skill
+      Vs
+      = @loser.trump_card.score(@skill)
+      = @skill
+    %p
+      = @loser
+      only had
+      = @loser.trump_card.score(@skill)
+      = @skill
+
+    %p= link_to 'Start another challenge!', '/stage', :class => 'btn btn-primary btn-large'
+
+    %script= raw @winner.callback
+      

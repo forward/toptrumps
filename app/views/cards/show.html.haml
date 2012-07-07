@@ -1,10 +1,38 @@
 .page-title
   %h1
     Your Card
+.row
+  .span6
+    %iframe{:src => iframe_card_url(@card), :width => 400, :height =>432}
+    %p= link_to 'Delete Card', card_path, :method => :delete, :class => 'btn btn-danger'
+  .span6
+    %h2 Make changes to your card
+  
+    %ol
+      %li
+        %p= link_to 'Edit your card on thimble', @card.url + '/edit', :target => :blank
+      %li
+        %p Publish your thimble again, this will give you a new url
 
-%iframe{:src => iframe_card_url(@card)}
-
-
-%h2= link_to 'Edit your card', @card.url + '/edit'
-or
-%h2= link_to 'Update from thimble', scrape_card_path(@card)
+      %li
+        %p Paste in your new thimble url:
+    = simple_form_for @card, :html => {:class => 'form-inline'} do |form|
+      = form.input_field :url, :label => false, :value => nil, :placeholder => 'New thimble url'
+      = form.button :submit, :class => 'btn-primary', :value => "Update my card!"
+      
+    %h2
+      Start a new challenge
+    %p
+      %strong
+        Current score:
+        = @card.win_count
+    %p Fight a random card with this card
+    = link_to 'Battle with this card', "/stage?card_id=#{@card.id}", :class => 'btn btn-primary btn-large'
+    
+    
+    
+    %h2 Add some winning javascript
+    = simple_form_for @card, :html => {:class => 'form-inline'} do |form|
+      = form.input :callback, :rows => 6, :input_html => {:style => 'width: 300px'}, :label => false
+      = form.button :submit, :class => 'btn-primary', :value => "Update my card!"
+      %a#test.btn{:href => '#'} Test Javascript

@@ -1,0 +1,7 @@
+- @cards.each do |card|
+  .span6
+    %h2
+      = link_to card, card
+      (#{card.win_count})
+    %iframe{:src => iframe_card_url(card), :width => 400, :height =>432}
+    %p= link_to 'Edit your card on thimble', card.url + '/edit', :target => :blank

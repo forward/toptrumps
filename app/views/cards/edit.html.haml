@@ -1,0 +1,5 @@
+= @card.errors.inspect
+
+= simple_form_for @card, :html => {:class => 'form-inline'} do |form|
+  = form.input_field :url, :label => false, :value => nil, :placeholder => 'New thimble url'
+  = form.button :submit, :class => 'btn-primary', :value => "Update my card!"

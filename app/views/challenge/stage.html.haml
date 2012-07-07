@@ -1,0 +1,13 @@
+.span5
+  %h1{:style => 'text-align:center'}= @card1.name
+  %iframe{:src => iframe_card_url(@card1), :width => 400, :height =>432}
+.span2
+  %h1{:style => 'text-align:center'} vs
+.span5
+  %h1{:style => 'text-align:center'}= @card2.name
+  %iframe{:src => iframe_card_url(@card2), :width => 400, :height =>432}
+
+.row
+  .span12{:style => 'text-align:center'}
+    %p
+    %p= link_to 'Top Trump Fight!', "/winner?card1=#{@card1.id}&card2=#{@card2.id}", :class => 'btn btn-primary btn-large', :style => 'margin-left: 60px'

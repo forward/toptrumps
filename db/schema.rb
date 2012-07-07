@@ -11,14 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120707093242) do
+ActiveRecord::Schema.define(:version => 20120707121258) do
 
   create_table "cards", :force => true do |t|
     t.string   "name"
     t.string   "url"
     t.text     "html"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "win_count",  :default => 0
+    t.text     "callback"
   end
 
 end

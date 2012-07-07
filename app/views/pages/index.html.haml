@@ -7,7 +7,7 @@
 .row
   %h2
     2. Paste it into thimble and make it awesome:
-    = link_to 'http://thimble.webmaker.org', 'https://thimble.webmaker.org/en-US/editor'
+    = link_to 'http://thimble.webmaker.org', 'https://thimble.webmaker.org/en-US/editor', :target => :blank
 
 %p= image_tag 'publish.png'
 
@@ -16,5 +16,5 @@
     3. Once you are ready to battle, publish your thimble and copy your thimble link here:
 
 = simple_form_for Card.new, :html => {:class => 'form-inline'} do |form|
-  = form.input_field :url, :label => false
+  = form.input_field :url, :label => false, :placeholder => 'your thimble link'
   = form.button :submit, :class => 'btn-primary', :value => "Let's Go!"

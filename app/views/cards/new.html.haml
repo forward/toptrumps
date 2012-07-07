@@ -1,0 +1,13 @@
+%h1 Something is not quite right with your card
+
+%ul
+  - @card.errors[:base].each do |e|
+    %li= e
+
+%h3= link_to 'Edit your card on thimble', @card.url + '/edit', :target => :blank
+
+%p and resubmit your url:
+
+= simple_form_for @card, :html => {:class => 'form-inline'} do |form|
+  = form.input_field :url, :label => false, :value => nil, :placeholder => 'New thimble url'
+  = form.button :submit, :class => 'btn-primary', :value => "Update my card!"

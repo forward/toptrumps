@@ -6,5 +6,9 @@ Toptrumps::Application.routes.draw do
     end
   end
   
+  match '/winner', :to => 'challenge#winner'
+  match '/stage', :to => 'challenge#stage'
+  match '/start', :to => 'challenge#start'
+  
   root :to => 'pages#index'
 end
