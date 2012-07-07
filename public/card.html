@@ -1,7 +1,62 @@
 <html>
 <head>
   <title>Trump Card</title>
+</head>
+<body>
 
+<div id="card">
+
+  <!-- You should give your character a name -->
+  <h1 id="name">My Name</h1>
+
+  <!-- Choose a picture for your chacter, try finding on on Google maybe? -->
+  <img id="picture" src="/missing.png" alt="My Picture" />
+
+  <!-- Give your character a breif description -->
+  <p id="description">A short description of my abilities should go here.</p>
+
+
+  <!--
+     Below is a list of your characters skills,
+     you should change the numbers as you like
+     but you have a maximum of 100 points to use
+  -->
+  <table id="skills">
+    <tr>
+      <th class="skill">Strength</th>
+      <td class="score">20</td>
+    </tr>
+    <tr>
+      <th class="skill">Speed</th>
+      <td class="score">20</td>
+    </tr>
+    <tr>
+      <th class="skill">Agility</th>
+      <td class="score">20</td>
+    </tr>
+    <tr>
+      <th class="skill">Age</th>
+      <td class="score">20</td>
+    </tr>
+    <tr>
+      <th class="skill">Power</th>
+      <td class="score">20</td>
+    </tr>
+  </table>
+
+  <!--
+    You should put your name in the space below where it says
+    Your Name so that people know who built this creation
+  -->
+  <p id="notes">
+    Created by
+    <strong id="author">Your Name</strong>
+  </p>
+
+</div>
+
+
+<!-- The things below are all styles, you can use change these to change the appearance of your card -->
   <style type="text/css">
     body {
       background-color: grey;
@@ -10,6 +65,7 @@
       font-size: 16px;
     }
 
+    /* change this to change the colors and fonts of your whole card */
     #card {
       background: white;
       width: 360px;
@@ -18,6 +74,7 @@
       border-radius: 10px;
     }
 
+    /* your cards name */
     h1 {
       float: right;
       width: 210px;
@@ -26,6 +83,7 @@
       font-weight: bold;
     }
 
+    /* your cards name */
     #description {
       float: right;
       width: 210px;
@@ -45,12 +103,15 @@
       border-collapse: collapse;
     }
 
+    /* your skills text */
     .skill {
       width: 50%;
       padding: 10px;
       text-align: right;
       border: 1px solid teal;
     }
+
+    /* your scores text */
     .score {
       width: 50%;
       padding: 10px;
@@ -58,6 +119,7 @@
       border: 1px solid teal;
     }
 
+    /* the 'created by' text */
     #notes {
       font-style: italic;
       font-size: 14px;
@@ -67,48 +129,6 @@
       margin-top: 20px;
     }
   </style>
-
-</head>
-<body>
-
-<div id="card">
-
-  <h1 id="name">My Name</h1>
-
-  <img id="picture" src="http://adkent.com/images/avatar.jpg" alt="My Picture" />
-
-  <p id="description">A short description of my abilities should go here.</p>
-
-
-  <table id="skills">
-    <tr>
-      <th class="skill">Strength</th>
-      <td class="score">8</td>
-    </tr>
-    <tr>
-      <th class="skill">Speed</th>
-      <td class="score">16</td>
-    </tr>
-    <tr>
-      <th class="skill">Agility</th>
-      <td class="score">23</td>
-    </tr>
-    <tr>
-      <th class="skill">Age</th>
-      <td class="score">6</td>
-    </tr>
-    <tr>
-      <th class="skill">Power</th>
-      <td class="score">12</td>
-    </tr>
-  </table>
-
-  <p id="notes">
-    Created by
-    <strong id="author">Your Name</strong>
-  </p>
-
-</div>
 
 </body>
 </html>
