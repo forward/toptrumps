@@ -1,0 +1,134 @@
+<html>
+<head>
+  <title>Trump Card</title>
+</head>
+<body>
+
+<div id="card">
+
+  <!-- You should give your character a name -->
+  <h1 id="name">Otter Penguin</h1>
+
+  <!-- Choose a picture for your chacter, try finding on on Google maybe? -->
+  <img id="picture" src="http://images.wikia.com/avatar/images/d/d6/Otter_penguin.png" alt="My Picture" />
+
+  <!-- Give your character a breif description -->
+  <p id="description">I am wise beyond all others and deviously handsome.</p>
+
+
+  <!--
+     Below is a list of your characters skills,
+     you should change the numbers as you like
+     but you have a maximum of 100 points to use
+  -->
+  <table id="skills">
+    <tr>
+      <th class="skill">Strength</th>
+      <td class="score">5</td>
+    </tr>
+    <tr>
+      <th class="skill">Speed</th>
+      <td class="score">25</td>
+    </tr>
+    <tr>
+      <th class="skill">Agility</th>
+      <td class="score">40</td>
+    </tr>
+    <tr>
+      <th class="skill">Age</th>
+      <td class="score">22</td>
+    </tr>
+    <tr>
+      <th class="skill">Power</th>
+      <td class="score">8</td>
+    </tr>
+  </table>
+
+  <!--
+    You should put your name in the space below where it says
+    Your Name so that people know who built this creation
+  -->
+  <p id="notes">
+    Created by
+    <strong id="author">Andy Kent</strong>
+  </p>
+
+</div>
+
+
+<!-- The things below are all styles, you can use change these to change the appearance of your card -->
+  <style type="text/css">
+    body {
+      background-color: grey;
+      color: white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /* change this to change the colors and fonts of your whole card */
+    #card {
+      background: #fc9;
+      width: 360px;
+      margin: 10px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* your cards name */
+    h1 {
+      float: right;
+      width: 210px;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    /* your cards name */
+    #description {
+      float: right;
+      width: 210px;
+      margin: 10px 0;
+    }
+
+    #picture {
+      float: left;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    #skills {
+      clear: both;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    /* your skills text */
+    .skill {
+      width: 50%;
+      padding: 10px;
+      text-align: right;
+      border: 1px solid #f0f0f0;
+    }
+
+    /* your scores text */
+    .score {
+      width: 50%;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #f0f0f0;
+    }
+
+    /* the 'created by' text */
+    #notes {
+      font-style: italic;
+      font-size: 14px;
+      text-align: center;
+      color: #eee;
+      margin: 0px;
+      margin-top: 20px;
+    }
+  </style>
+
+</body>
+</html>
