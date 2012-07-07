@@ -13,6 +13,7 @@ gem 'simple_form'
 gem "haml-rails"
 gem "twitter-bootstrap-rails"
 gem "inherited_resources"
+gem "nokogiri"
 
 gem 'thin'
 
