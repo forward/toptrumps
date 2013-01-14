@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 
-gem 'haml', '3.2.0.alpha14'
-gem 'sass', '3.2.0.alpha.247'
+gem 'haml', '~> 3.2.0.alpha14'
+gem 'sass', '~> 3.2.0.alpha.247'
 gem 'simple_form'
 gem "haml-rails"
 gem "twitter-bootstrap-rails"
